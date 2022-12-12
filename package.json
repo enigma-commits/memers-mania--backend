@@ -1,0 +1,39 @@
+{
+	"name": "memers-mania",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"type": "module",
+	"devDependencies": {
+		"concurrently": "^7.0.0",
+		"nodemon": "^2.0.15"
+	},
+	"scripts": {
+		"server": "nodemon server/index --ignore client",
+		"client": "npm start --prefix client",
+		"start": "node index.js",
+		"heroku-postbuild": "cd ../client && npm install && npm run build"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/enigma-commits/memers-mania.git"
+	},
+	"keywords": [],
+	"dependencies": {
+		"bcryptjs": "^2.4.3",
+		"body-parser": "^1.20.0",
+		"colors": "^1.4.0",
+		"cors": "^2.8.5",
+		"dotenv": "^16.0.0",
+		"express": "^4.18.1",
+		"google-auth-library": "^8.1.1",
+		"jsonwebtoken": "^8.5.1",
+		"mongoose": "^6.4.6"
+	},
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/enigma-commits/memers-mania/issues"
+	},
+	"homepage": "https://github.com/enigma-commits/memers-mania#readme"
+}
